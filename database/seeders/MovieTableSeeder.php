@@ -21,6 +21,7 @@ class MovieTableSeeder extends Seeder
                 'video_url' => 'https://www.youtube.com/watch?v=vrJU2BwdJRY&t=15s',
                 'thumbnail' => 'https://upload.wikimedia.org/wikipedia/id/8/81/ShawshankRedemptionMoviePoster.jpg',
                 'rating' => 4.3,
+                'is_featured' => 1,
             ],
             [
                 'name' => 'The Godfather',
@@ -29,6 +30,7 @@ class MovieTableSeeder extends Seeder
                 'video_url' => 'https://www.youtube.com/watch?v=vrJU2BwdJRY&t=15s',
                 'thumbnail' => 'https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg',
                 'rating' => 4.6,
+                'is_featured' => 0,
             ],
             [
                 'name' => 'The Godfather: Part II',
@@ -37,6 +39,7 @@ class MovieTableSeeder extends Seeder
                 'video_url' => 'https://www.youtube.com/watch?v=vrJU2BwdJRY&t=15s',
                 'thumbnail' => 'https://upload.wikimedia.org/wikipedia/id/thumb/0/03/Godfather_part_ii.jpg/220px-Godfather_part_ii.jpg',
                 'rating' => 4.4,
+                'is_featured' => 0,
             ],
         ];
         Movie::insert($movie);
