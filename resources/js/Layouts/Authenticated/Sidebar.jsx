@@ -55,14 +55,16 @@ export default function Sidebar({ auth }) {
                         </div>
                         {/* ./Others */}
                         {/* Subscription details */}
-                        <SubscriptionDetail
-                            name={auth.activePlan.name}
-                            isPremium={auth.activePlan.name === "Premium"}
-                            remainingActiveDays={
-                                auth.activePlan.remainingActiveDays
-                            }
-                            activeDays={auth.activePlan.activeDays}
-                        />
+                        {auth.activePlan && (
+                            <SubscriptionDetail
+                                name={auth.activePlan.name}
+                                isPremium={auth.activePlan.name === "Premium"}
+                                remainingActiveDays={
+                                    auth.activePlan.remainingActiveDays
+                                }
+                                activeDays={auth.activePlan.activeDays}
+                            />
+                        )}
                         {/* ./Subscription details */}
                     </div>
                 </div>
