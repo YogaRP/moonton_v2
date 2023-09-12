@@ -27,6 +27,7 @@ TextInput.propTypes = {
         "error-outline",
     ]),
     autoComplete: PropTypes.oneOf(["on", "off"]),
+    accept: PropTypes.string,
     required: PropTypes.bool,
     isFocused: PropTypes.bool,
     isError: PropTypes.bool,
@@ -34,6 +35,7 @@ TextInput.propTypes = {
 };
 
 export default function TextInput({
+    accept,
     type = "text",
     name,
     variant = "primary",
@@ -57,6 +59,7 @@ export default function TextInput({
 
     return (
         <input
+            accept={accept}
             type={type}
             name={name}
             value={value}
